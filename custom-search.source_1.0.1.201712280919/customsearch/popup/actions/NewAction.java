@@ -43,16 +43,16 @@ public class NewAction implements IObjectActionDelegate {
 		String selectedText = getSelectedText();
 		
 		if(selectedText == null){
-			MessageDialog.openInformation(shell, "IDIADA_SEARCH", "Error get text.");
+			MessageDialog.openInformation(shell, "SEARCH", "Error get text.");
 		}else{
 			if(selectedText.isEmpty()){
-				MessageDialog.openInformation(shell, "IDIADA_SEARCH", "Text selected empty.");
+				MessageDialog.openInformation(shell, "SEARCH", "Text selected empty.");
 			}else{
 				try {
 					
 					searchTextLikeMethod(selectedText.replace("_", ""));
 				} catch (CoreException e) {
-					MessageDialog.openInformation(shell, "IDIADA_SEARCH", "Error search text.");
+					MessageDialog.openInformation(shell, "SEARCH", "Error search text.");
 					e.printStackTrace();
 				}
 			}
