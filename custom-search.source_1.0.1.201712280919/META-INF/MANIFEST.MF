@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: custom-search.source
+Bundle-Version: 1.0.1.201712280919
+Bundle-Name: %pluginName
+Bundle-Localization: plugin
+Bundle-ManifestVersion: 2
+Eclipse-SourceBundle: custom-search;version="1.0.1.201712280919";roots
+ :="."
+
